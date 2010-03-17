@@ -2,6 +2,10 @@
 
 A collection of words joined in sentence appropriately relevant to the title, ergo your mom.
 
+== Install
+
+gem install your_mom
+
 == Usage
 
 your_mom #=> truth
