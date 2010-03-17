@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+mom = ''
+File.open(File.expand_path(File.dirname(__FILE__) + '/../lib/dumb.txt')).each do |line|
+  mom = line if rand($.) < 1
+end
+puts mom
+
+

@@ -1,28 +1,28 @@
-require 'rubygems'
 require 'rake'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "your_mom"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A collection of words joined in sentence appropriately relevant to the title, ergo your mom.}
+    gem.description = %Q{A collection of words joined in sentence appropriately relevant to the title, ergo your mom.}
     gem.email = "adambair@gmail.com"
     gem.homepage = "http://github.com/adambair/your_mom"
     gem.authors = ["Adam Bair"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.executable = "your_mom"
+    gem.files =  FileList["[A-Z]*", "{bin,generators,lib,test}/**/*", 'lib/jeweler/templates/.gitignore']
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
+  puts "Your mom is not available. Install it with: gem install your_mom"
 end
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
+  puts 'Warning: your_mom has no tests.'
+  #test.libs << 'lib' << 'test'
+  #test.pattern = 'test/**/test_*.rb'
+  #test.verbose = true
 end
 
 begin
