@@ -6,6 +6,14 @@ A collection of words joined in sentence appropriately relevant to the title, er
 
 your_mom #=> truth
 
+== TODO
+
+* have multiple joke files
+* alias the command to yo_mama and yo_mamma
+* no arguments any joke from any file
+* arguments like so_stupid or so_fat give the expected joke
+* alias so_stupid to so_dumb, etc
+
 == Copyright
 
 Copyright (c) 2010 Adam Bair. See LICENSE for details.
