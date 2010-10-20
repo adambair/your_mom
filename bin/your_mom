@@ -1,9 +1,5 @@
 #!/usr/bin/env ruby
 
-mom = ''
-File.open(File.expand_path(File.dirname(__FILE__) + '/../lib/dumb.txt')).each do |line|
-  mom = line if rand($.) < 1
+puts File.open(File.expand_path(File.dirname(__FILE__) + '/../lib/dumb.txt'), 'r').inject do |final,current|
+  rand($.) < 1 ? current : final
 end
-puts mom
-
-
