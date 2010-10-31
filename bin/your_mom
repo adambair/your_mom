@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-puts File.open(File.expand_path(File.dirname(__FILE__) + '/../lib/dumb.txt'), 'r').inject do |final,current|
+puts File.open(File.expand_path(File.dirname(__FILE__) + '/../lib/dumb.txt'), 'r').inject { |final,current|
   rand($.) < 1 ? current : final
-end
+}
