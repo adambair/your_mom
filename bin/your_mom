@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), "..", "lib/your_mom")
 
-mom = ''
-File.open(File.expand_path(File.dirname(__FILE__) + '/../lib/dumb.txt')).each do |line|
-  mom = line if rand($.) < 1
-end
-puts mom
+your_mom = YourMom.new
+puts your_mom.is_so_dumb
+# like really dumb
 
 
