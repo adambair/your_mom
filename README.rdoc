@@ -12,6 +12,8 @@ your_mom #=> truth
 
 == TODO
 
+//hello world
+
 * have multiple joke files
 * alias the command to yo_mama and yo_mamma
 * no arguments any joke from any file
